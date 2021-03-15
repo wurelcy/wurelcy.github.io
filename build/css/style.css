@@ -378,24 +378,24 @@ ul {
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0.6; }
+    opacity: 0.7; }
   to {
     opacity: 1; } }
 
 @keyframes fade {
   from {
-    opacity: 0.6; }
+    opacity: 0.7; }
   to {
     opacity: 1; } }
 
 .fade {
-  -webkit-animation: fade 3s infinite ease-out;
-          animation: fade 3s infinite ease-out; }
+  -webkit-animation: fade 3s infinite ease-in-out;
+          animation: fade 3s infinite ease-in-out; }
 
 .first-slide {
-  background: linear-gradient(-90deg, #ae320a 19.87%, #f75d2b 80.11%), #0a0e20;
+  background-color: #ae320a;
   position: relative;
-  transition: all 1s; }
+  transition: all 2s; }
   .first-slide::before {
     content: "";
     position: absolute;
@@ -407,9 +407,9 @@ ul {
     top: -40px; }
 
 .second-slide {
-  background: linear-gradient(-90deg, #37c058 19.87%, #4bdb6d 80.11%), #0a0e20;
+  background-color: #37c058;
   position: relative;
-  transition: all 1s; }
+  transition: all 2s; }
   .second-slide::before {
     content: "";
     position: absolute;
@@ -422,9 +422,9 @@ ul {
 
 .third-slide {
   color: black;
-  background: linear-gradient(-90deg, #ffc060 19.87%, #ffe79a 80.11%), #0a0e20;
+  background-color: #ffc060;
   position: relative;
-  transition: all 1s; }
+  transition: all 2s; }
   .third-slide::before {
     content: "";
     position: absolute;
@@ -436,9 +436,9 @@ ul {
     top: 100px; }
 
 .fourth-slide {
-  background: linear-gradient(-90deg, #8fbe15 19.87%, #aad50e 80.11%), #0a0e20;
+  background-color: #8fbe15;
   position: relative;
-  transition: all 1s; }
+  transition: all 2s; }
   .fourth-slide::before {
     content: "";
     position: absolute;

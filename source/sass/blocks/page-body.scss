@@ -13,7 +13,7 @@
 
 @keyframes fade {
   from {
-    opacity: 0.6;
+    opacity: 0.7;
   }
 
   to {
@@ -22,13 +22,14 @@
 }
 
 .fade {
-  animation: fade 3s infinite ease-out;
+  animation: fade 3s infinite ease-in-out;
 }
 
 .first-slide {
-  background: linear-gradient(-90deg, #ae320a 19.87%, #f75d2b 80.11%), #0a0e20;
+  //background: linear-gradient(-90deg, #ae320a 19.87%, #f75d2b 80.11%), #0a0e20;
+  background-color: #ae320a;
   position: relative;
-  transition: all 1s;
+  transition: all 2s;
 
   &::before {
     content: "";
@@ -43,9 +44,10 @@
 }
 
 .second-slide {
-  background: linear-gradient(-90deg, #37c058 19.87%, #4bdb6d 80.11%), #0a0e20;
+  background-color: #37c058;
+  //background: linear-gradient(-90deg, #37c058 19.87%, #4bdb6d 80.11%), #0a0e20;
   position: relative;
-  transition: all 1s;
+  transition: all 2s;
 
   &::before {
     content: "";
@@ -61,9 +63,10 @@
 
 .third-slide {
   color: black;
-  background: linear-gradient(-90deg, #ffc060 19.87%, #ffe79a 80.11%), #0a0e20;
+  background-color: #ffc060;
+  //background: linear-gradient(-90deg, #ffc060 19.87%, #ffe79a 80.11%), #0a0e20;
   position: relative;
-  transition: all 1s;
+  transition: all 2s;
 
   &::before {
     content: "";
@@ -78,9 +81,10 @@
 }
 
 .fourth-slide {
-  background: linear-gradient(-90deg, #8fbe15 19.87%, #aad50e 80.11%), #0a0e20;
+  background-color: #8fbe15;
+  //background: linear-gradient(-90deg, #8fbe15 19.87%, #aad50e 80.11%), #0a0e20;
   position: relative;
-  transition: all 1s;
+  transition: all 2s;
 
   &::before {
     content: "";

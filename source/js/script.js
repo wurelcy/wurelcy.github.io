@@ -5,15 +5,20 @@ let slideActive = document.querySelector('.slider__item--active');
 let bgActiveClass = 'first-slide';
 const wrapper = document.querySelector('.wrapper');
 
+let removeFade = () => {
+  wrapper.classList.remove('fade');
+};
+
 slideButtons.forEach(function(slideButton, index) {
   if (slideButton.classList.contains('buttons-list__btn--active')) {
     buttonActive = slideButton;
   }
   slideButton.addEventListener('click', function (evt) {
     evt.preventDefault();
+    removeFade();
     buttonActive.classList.remove('buttons-list__btn--active');
-    wrapper.classList.remove('fade');
     buttonActive = slideButton;
+    
     slideButton.classList.add('buttons-list__btn--active');
     slides.forEach(function(slide, slideIndex) {
       if (slide.classList.contains('slider__item--active')) {
@@ -23,8 +28,6 @@ slideButtons.forEach(function(slideButton, index) {
         slideActive.classList.remove('slider__item--active');
         slideActive = slide;
         slide.classList.add('slider__item--active');
-        wrapper.classList.add('fade');
-
         wrapper.classList.remove(bgActiveClass);
 
         switch (index) {
@@ -42,8 +45,9 @@ slideButtons.forEach(function(slideButton, index) {
           break;
         }
 
+        wrapper.classList.add('fade');
         wrapper.classList.add(bgActiveClass);
-        setTimeout(wrapper.classList.remove('fade'), 3000);
+        setTimeout(removeFade, 2900);
       }
       });
     });
