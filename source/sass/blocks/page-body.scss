@@ -1,0 +1,71 @@
+.page-body {
+  max-height: 937px;
+  margin: 0;
+  color: white;
+	align-content: start;
+  background-size: cover;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  transition: all 1s;
+}
+
+.first-slide {
+  background: linear-gradient(-90deg, #ae320a 19.87%, #f75d2b 80.11%), #0a0e20;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1320px;
+    height: 1089px;
+    background-image: url("../img/cross.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    top: -40px;
+  }
+}
+
+.second-slide {
+  background: linear-gradient(-90deg, #37c058 19.87%, #4bdb6d 80.11%), #0a0e20;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    width: 1036px;
+    height: 847px;
+    background-image: url("../img/letter.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+  }
+}
+
+.third-slide {
+  color: black;
+  background: linear-gradient(-90deg, #ffc060 19.87%, #ffe79a 80.11%), #0a0e20;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    width: 1049px;
+    height: 815px;
+    background-image: url("../img/cat.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+  }
+}
+
+.fourth-slide {
+  background: linear-gradient(-90deg, #8fbe15 19.87%, #aad50e 80.11%), #0a0e20;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    width: 1056px;
+    height: 772px;
+    background-image: url("../img/m.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+  }
+}

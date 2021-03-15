@@ -1,0 +1,14 @@
+.buttons-list__btn {
+  background-color: white;
+  border: 0;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.buttons-list__btn--active {
+  background-color: black;
+  width: 16px;
+}
