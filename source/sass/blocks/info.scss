@@ -1,6 +1,6 @@
 .info {
   max-width: 600px;
-  margin-top: 20px;;
+  margin-top: 20px;
 }
 
 .info__slogan {
@@ -31,4 +31,43 @@
   margin: 0;
   font-size: 20px;
   line-height: 28px;
+}
+
+@media (max-width: $tablet-width) {
+  .info {
+    max-width: 295px;
+  }
+  
+  .info__slogan {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  .info__list {
+    max-width: 490px;
+  }
+  
+  .info__item {
+    margin-bottom: 20px;
+  }
+  
+  .info__item-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .info__description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {  
+  .info {
+    margin-bottom: 40px;
+  }
+
+ .info__list {
+    display: none;
+  }
 }

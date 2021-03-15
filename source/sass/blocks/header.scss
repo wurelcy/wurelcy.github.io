@@ -1,5 +1,5 @@
-.header .container{
-  margin-top: 30px;
+.header .container {
+  padding-top: 30px;
   padding-bottom: 130px;
   display: flex;
   justify-content: space-between;
@@ -9,6 +9,7 @@
 .header__logo {
   font-size: 26px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .header__registration {
@@ -18,3 +19,23 @@
   border: 1px solid white;
   border-radius: 6%;
 }
+
+@media (max-width: $tablet-width) {
+  .header .container {
+    padding-bottom: 200px;
+  }
+
+  .header__registration {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {  
+  .header .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+ }

@@ -2,3 +2,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: $mobile-width-only) {  
+  .page-main .container {
+    flex-direction: column;
+  }
+ }

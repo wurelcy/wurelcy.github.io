@@ -6,9 +6,21 @@
   width: 15px;
   cursor: pointer;
   padding: 0;
+  outline: none;
 }
 
 .buttons-list__btn--active {
   background-color: black;
   width: 16px;
 }
+
+@media (max-width: $mobile-width-only) { 
+  .buttons-list__btn {
+   height: 12px;
+    width: 12px;
+  }
+  
+  .buttons-list__btn--active {
+    width: 13px;
+  }
+ }

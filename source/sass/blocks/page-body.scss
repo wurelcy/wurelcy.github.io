@@ -4,13 +4,31 @@
   color: white;
 	align-content: start;
   background-size: cover;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: 'Montserrat', 'Arial', sans-serif; 
+}
+
+.wrapper {
   transition: all 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: fade 3s infinite ease-out;
 }
 
 .first-slide {
   background: linear-gradient(-90deg, #ae320a 19.87%, #f75d2b 80.11%), #0a0e20;
   position: relative;
+  transition: all 1s;
 
   &::before {
     content: "";
@@ -27,15 +45,17 @@
 .second-slide {
   background: linear-gradient(-90deg, #37c058 19.87%, #4bdb6d 80.11%), #0a0e20;
   position: relative;
+  transition: all 1s;
 
   &::before {
+    content: "";
     position: absolute;
     width: 1036px;
     height: 847px;
     background-image: url("../img/letter.svg");
     background-repeat: no-repeat;
     right: 0;
-    top: 0;
+    top: 60px;
   }
 }
 
@@ -43,29 +63,33 @@
   color: black;
   background: linear-gradient(-90deg, #ffc060 19.87%, #ffe79a 80.11%), #0a0e20;
   position: relative;
+  transition: all 1s;
 
   &::before {
+    content: "";
     position: absolute;
     width: 1049px;
     height: 815px;
     background-image: url("../img/cat.svg");
     background-repeat: no-repeat;
     right: 0;
-    top: 0;
+    top: 100px;
   }
 }
 
 .fourth-slide {
   background: linear-gradient(-90deg, #8fbe15 19.87%, #aad50e 80.11%), #0a0e20;
   position: relative;
+  transition: all 1s;
 
   &::before {
+    content: "";
     position: absolute;
     width: 1056px;
     height: 772px;
     background-image: url("../img/m.svg");
     background-repeat: no-repeat;
     right: 0;
-    top: 0;
+    top: 140px;
   }
 }
