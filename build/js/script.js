@@ -7,7 +7,6 @@ let bgActiveClass = bgClasses[0];
 const wrapper = document.querySelector('.wrapper');
 
 let xDown = null;                                                        
-let yDown = null;
 
 let removeFade = () => {
   wrapper.classList.remove('fade');
