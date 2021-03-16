@@ -10,12 +10,12 @@
   position: absolute;
   width: 100%;
   right: 0;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 2.5s ease-in-out;
 }
 
 .slider__item--active {
   opacity: 1;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 2.5s ease-in-out;
 }
 
 .slider__buttons {
@@ -61,7 +61,7 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 38px;
-  border: 1px solid white;
+  border: 1px solid $white;
   border-radius: 10px;
   padding: 20px 43px;
 }

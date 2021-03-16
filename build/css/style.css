@@ -368,7 +368,7 @@ ul {
 .page-body {
   max-height: 937px;
   margin: 0;
-  color: white;
+  color: #ffffff;
   align-content: start;
   background-size: cover;
   font-family: 'Montserrat', 'Arial', sans-serif; }
@@ -378,24 +378,24 @@ ul {
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0.7; }
+    opacity: 0.8; }
   to {
     opacity: 1; } }
 
 @keyframes fade {
   from {
-    opacity: 0.7; }
+    opacity: 0.8; }
   to {
     opacity: 1; } }
 
 .fade {
-  -webkit-animation: fade 3s infinite ease-in-out;
-          animation: fade 3s infinite ease-in-out; }
+  -webkit-animation: fade 2.5s infinite ease-out;
+          animation: fade 2.5s infinite ease-out; }
 
 .first-slide {
   background-color: #ae320a;
   position: relative;
-  transition: all 2s; }
+  transition: all 2.5s; }
   .first-slide::before {
     content: "";
     position: absolute;
@@ -409,7 +409,7 @@ ul {
 .second-slide {
   background-color: #37c058;
   position: relative;
-  transition: all 2s; }
+  transition: all 2.5s; }
   .second-slide::before {
     content: "";
     position: absolute;
@@ -421,10 +421,10 @@ ul {
     top: 60px; }
 
 .third-slide {
-  color: black;
+  color: #000000;
   background-color: #ffc060;
   position: relative;
-  transition: all 2s; }
+  transition: all 2.5s; }
   .third-slide::before {
     content: "";
     position: absolute;
@@ -438,7 +438,7 @@ ul {
 .fourth-slide {
   background-color: #8fbe15;
   position: relative;
-  transition: all 2s; }
+  transition: all 2.5s; }
   .fourth-slide::before {
     content: "";
     position: absolute;
@@ -473,7 +473,7 @@ ul {
   font-size: 16px;
   line-height: 24px;
   padding: 10px 15px;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   border-radius: 6%; }
 
 @media (max-width: 1023px) {
@@ -553,11 +553,11 @@ ul {
   position: absolute;
   width: 100%;
   right: 0;
-  transition: opacity 2s ease-in-out; }
+  transition: opacity 2.5s ease-in-out; }
 
 .slider__item--active {
   opacity: 1;
-  transition: opacity 2s ease-in-out; }
+  transition: opacity 2.5s ease-in-out; }
 
 .slider__buttons {
   display: flex;
@@ -596,7 +596,7 @@ ul {
   font-weight: 600;
   font-size: 30px;
   line-height: 38px;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   padding: 20px 43px; }
 
@@ -629,7 +629,7 @@ ul {
     margin-right: 0; } }
 
 .buttons-list__btn {
-  background-color: white;
+  background-color: #ffffff;
   border: 0;
   border-radius: 50%;
   height: 15px;
@@ -639,7 +639,7 @@ ul {
   outline: none; }
 
 .buttons-list__btn--active {
-  background-color: black;
+  background-color: #000000;
   width: 16px; }
 
 @media (max-width: 767px) {

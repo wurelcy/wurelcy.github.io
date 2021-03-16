@@ -1,7 +1,7 @@
 .page-body {
   max-height: 937px;
   margin: 0;
-  color: white;
+  color: $white;
 	align-content: start;
   background-size: cover;
   font-family: 'Montserrat', 'Arial', sans-serif; 
@@ -13,7 +13,7 @@
 
 @keyframes fade {
   from {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
   to {
@@ -22,14 +22,14 @@
 }
 
 .fade {
-  animation: fade 3s infinite ease-in-out;
+  animation: fade 2.5s infinite ease-out;
 }
 
 .first-slide {
   //background: linear-gradient(-90deg, #ae320a 19.87%, #f75d2b 80.11%), #0a0e20;
   background-color: #ae320a;
   position: relative;
-  transition: all 2s;
+  transition: all 2.5s;
 
   &::before {
     content: "";
@@ -47,7 +47,7 @@
   background-color: #37c058;
   //background: linear-gradient(-90deg, #37c058 19.87%, #4bdb6d 80.11%), #0a0e20;
   position: relative;
-  transition: all 2s;
+  transition: all 2.5s;
 
   &::before {
     content: "";
@@ -62,11 +62,11 @@
 }
 
 .third-slide {
-  color: black;
+  color: $black;
   background-color: #ffc060;
   //background: linear-gradient(-90deg, #ffc060 19.87%, #ffe79a 80.11%), #0a0e20;
   position: relative;
-  transition: all 2s;
+  transition: all 2.5s;
 
   &::before {
     content: "";
@@ -84,7 +84,7 @@
   background-color: #8fbe15;
   //background: linear-gradient(-90deg, #8fbe15 19.87%, #aad50e 80.11%), #0a0e20;
   position: relative;
-  transition: all 2s;
+  transition: all 2.5s;
 
   &::before {
     content: "";
